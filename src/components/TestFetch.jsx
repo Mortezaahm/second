@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import { data } from './data';
+import { data } from '../data';
 const url = "https://api.github.com/users";
 
 
-function App() {
+function TestFetch() {
 
   const [users, setUsers] = useState([]);
 
@@ -99,4 +99,4 @@ function App() {
   );
 }
 
-export default App;
+export default TestFetch;
