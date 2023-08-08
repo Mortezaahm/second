@@ -44,6 +44,7 @@ h2 {
   border: none;
   width: 200px;
   padding: 10px 0;
+  border-radius: 5px;
 }
 
 ul {
@@ -73,4 +74,35 @@ li a {
   text-decoration: none;
   color: #222;
   font-size: 16px;
+}
+
+form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 7px;
+}
+
+@media screen and (max-width: 576px) {
+  form {
+    width: 100%;
+  }
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f0cece;
+  padding: 0 20px;
+  margin-top: 40px;
+
 }

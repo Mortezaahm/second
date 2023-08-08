@@ -1,6 +1,7 @@
 import React from 'react';
 import TestFetch from './components/TestFetch';
 import Third from './components/Third';
+import Form from './components/Form';
 
 
 function App() {
@@ -8,8 +9,9 @@ function App() {
  
   return (
     <>
-     {/* <TestFetch/> */}
-     <Third/>
+     {/* <TestFetch/>
+     <Third/> */}
+     <Form/>
     </>
   );
 }
