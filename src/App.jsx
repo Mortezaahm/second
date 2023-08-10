@@ -2,7 +2,7 @@ import React from 'react';
 import TestFetch from './components/TestFetch';
 import Third from './components/Third';
 import Form from './components/Form';
-
+import Reducer from './components/Reducer';
 
 function App() {
 
@@ -11,7 +11,8 @@ function App() {
     <>
      {/* <TestFetch/>
      <Third/> */}
-     <Form/>
+     {/* <Form/> */}
+     <Reducer/>
     </>
   );
 }
