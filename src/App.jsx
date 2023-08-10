@@ -3,7 +3,7 @@ import TestFetch from './components/TestFetch';
 import Third from './components/Third';
 import Form from './components/Form';
 import Reducer from './components/Reducer';
-
+import CustomHook from './components/CustomHook';
 function App() {
 
  
@@ -12,7 +12,8 @@ function App() {
      {/* <TestFetch/>
      <Third/> */}
      {/* <Form/> */}
-     <Reducer/>
+     {/* <Reducer/> */}
+     <CustomHook/>
     </>
   );
 }

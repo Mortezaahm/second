@@ -61,16 +61,13 @@ li {
   margin-top: 50px;
   background: #fff;
   list-style: none;
-  width: 32%;
+  width: 100%;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 li img {
-  width: 60px;
-  border-radius: 50%;
+  width: 100px;
+  border-radius: 60%;
 }
 
 li a {
