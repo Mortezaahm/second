@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import TestFetch from './components/TestFetch';
 // import Third from './components/Third';
 // import Form from './components/Form';
@@ -12,8 +12,12 @@ import Products from './Pages/Products';
 import Error from './Pages/Error';
 import SharedLayout from './Pages/SharedLayout';
 import SingleProduct from './Pages/SingleProduct';
+import Login from './Pages/Login';
+import DashBoard from './Pages/DashBoard';
+import ProtectedRoute from './Pages/ProtectedRoute';
 
 function App() {
+  const [user, setUser] = useState(null);
 
  
   return (
@@ -24,6 +28,12 @@ function App() {
           <Route path='about' element={<About />}/>
           <Route path='products' element={<Products />}/>
           <Route path='products/:productId' element={<SingleProduct />}/>
+          <Route path='login' element = {<Login setUser={setUser}/>} />
+          <Route path='dashboard' 
+          element = {
+          <ProtectedRoute user={user}>
+            <DashBoard user={user} />
+          </ProtectedRoute>} />
           <Route path='*' element={<Error />}/>
         </Route>
       </Routes>

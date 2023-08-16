@@ -1,9 +1,10 @@
 import React from 'react'
 
-function DashBoard() {
+function DashBoard({user}) {
   return (
     <div>
-      <h2>DashBoard</h2>
+      <h1>DashBoard</h1>
+      <h2>Hello, {user.name}</h2>
     </div>
   )
 }
